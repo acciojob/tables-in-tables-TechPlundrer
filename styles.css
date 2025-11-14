@@ -1,2 +1,13 @@
 
 /* Your CSS Code here. */
+table, th, td {
+	border: 2px solid black;
+	border-collapse:collapse;
+	padding:6px
+}
+.black-cell{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-weight:bold;
+}
