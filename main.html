@@ -8,67 +8,59 @@
   </head>
   <body>
 	  <!--Main large table-->
-    <table style="width: 100%; height: 100%">
-		
-		<tr>
-			<!--top left t2-->
-			<td width="50%">
-				<table width="100%">
-					<tr>
-						<th colspan="2">Nested Table 2</th>
-					</tr>
-					<tr>
-						<th>column 1</th>
-						<th>column 2</th>
-					</tr>
-					<tr>
-						<td>abc</td>
-						<td>def</td>
-					</tr>
-				</table>
-			</td>
-		<!--Top right Table n with list-->
-			<td width="50%">
-				<table width="100%">
-					<tr>
-						<th>Nested Table 1</th>
-					</tr>
-					<tr>
-						<td>
-							<ul>
-								<li>list item</li>
-								<li>list item</li>
-								<li>list item</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
+    <table style="width: 100%; height: 100%; border:2px solid black">
+			<tr>
+				<!--top left-->
+				<td>
+					<table style="border: 2px solid black; margin: auto">
+					    <th colspan="2">Nested Table 2</th>
+						<tr>
+							<th>Column 1</th>
+							<th>Column 2</th>
+						</tr>
+						<tr>
+							<td>abc</td>
+							<td>def</td>
+						</tr>
+					</table>		
+				</td>
 
-		   <!-- Bottom Left (Nested Table 3 with link) -->
+				<!--top right-->
+				<td>
+					<table>
+						<th>Nested Table 1</th>
+						<tr>
+							<td>
+								<ul style="align-self:left">
+									<li>list item 1</li>
+									<li>list item 2</li>
+									<li>list item 3</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
 		<tr>
-			<td width="50%">
-				<table width="100%">
+			<!--bottom left-->
+			<td>
+				<table>
+					<th colspan="2">Nested Table 3</th>
 					<tr>
-						<th colspan="2">Nested Table 3</th>
-					</tr>
-					<tr>
-						<td><a href="#">Nested Table</a></td>
+						<td><a href=http//:example.com; target="_blank"><b>Nested Table</b></a></td>
 						<td>Demo Continued</td>
 					</tr>
 				</table>
 			</td>
 
-			  <!-- Bottom Right (Nested Table 4 with black HTML cell) -->
-			<td width="50%">
-				<table width="100%">
-					<tr>
-						<th>Nested Table 4</th>
-					</tr>
-					<tr>
-						<td class="black-cell">HTML</td>
-					</tr>
+			<!--bottom right-->
+			<td>
+				<table>
+						<th>Nested table 4</th>
+						<tr>
+							<th style="background-color:black;
+								color:white">HTML</th>
+						</tr>
 				</table>
 			</td>
 		</tr>
